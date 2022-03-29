@@ -6,7 +6,7 @@ dependencies:
   - pip=18.1
   - enum34=1.1.6
   - futures=3.3.0
-  - h5py=2.9.0l.c
+  - h5py
   - hdf5=1.10.4
   - imageio=2.6.1
   - keras=2.2.4
