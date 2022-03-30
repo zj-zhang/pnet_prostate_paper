@@ -123,7 +123,7 @@ class Diagonal(Layer):
         input_dimension = input_shape[1]
         self.kernel_shape = (input_dimension, self.units)
         print('input dimension {} self.units {}'.format(input_dimension, self.units))
-        self.n_inputs_per_node = input_dimension / self.units
+        self.n_inputs_per_node = int(input_dimension / self.units)
         print('n_inputs_per_node {}'.format(self.n_inputs_per_node))
 
         rows = np.arange(input_dimension)
