@@ -86,7 +86,7 @@ def shuffle_genes_map(mapp):
 
 def get_pnet(inputs, features, genes, n_hidden_layers, direction, activation, activation_decision, w_reg,
              w_reg_outcomes, dropout, sparse, add_unk_genes, batch_normal, kernel_initializer, use_bias=False,
-             shuffle_genes=False, attention=False, dropout_testing=False, non_neg=False, sparse_first_layer=True):
+             shuffle_genes=False, attention=False, dropout_testing=False, non_neg=False, sparse_first_layer=True, **kwargs):
     feature_names = {}
     n_features = len(features)
     n_genes = len(genes)

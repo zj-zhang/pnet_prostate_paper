@@ -27,7 +27,7 @@ def add_edges(G, node, n_levels):
 def complete_network(G, n_leveles=4):
     sub_graph = nx.ego_graph(G, 'root', radius=n_leveles)
     terminal_nodes = [n for n, d in sub_graph.out_degree() if d == 0]
-    distances = [len(nx.shortest_path(G, source='root', target=node)) for node in terminal_nodes]
+    #distances = [len(nx.shortest_path(G, source='root', target=node)) for node in terminal_nodes]
     for node in terminal_nodes:
         distance = len(nx.shortest_path(sub_graph, source='root', target=node))
         if distance <= n_leveles:
