@@ -6,7 +6,11 @@ from keras import regularizers
 from keras.engine import Layer
 # from keras import initializations
 from keras.initializers import glorot_uniform, Initializer
-from keras.layers import activations, initializers, constraints
+try:
+    from keras.layers import activations, initializers, constraints
+except:
+    from keras import activations, initializers, constraints
+
 # our layer will take input shape (nb_samples, 1)
 from keras.regularizers import Regularizer
 
